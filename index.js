@@ -1,10 +1,10 @@
-module.exports.deleteMe = deleteMe;
-
-// require longjohn to have long stack traces in dev environment
-if (process.env.NODE_ENV !== 'production'){
-  require('longjohn');
+'use strict';
+if (process.env.NODE_ENV !== 'production') {
+	require('longjohn');
 }
 
-function deleteMe(){
-	console.log('index.deleteMe function is used to check test setup. If everything is ok - delete the function');
-}
+var server = app.listen(3000, function () {
+	var host = server.address().address;
+	var port = server.address().port;
+	console.log('App listening at http://%s:%s', host, port);
+});
