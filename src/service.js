@@ -1,3 +1,3 @@
-/**
- * Created by azadorozhniy on 06/04/15.
- */
+module.exports = function () {
+	console.error('POOP!! Fix it!!!')
+};
