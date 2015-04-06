@@ -14,12 +14,13 @@ module.exports = function registerRoutes (app) {
 
 	app.get('/tasks', listTasks);
 	app.get('/tasks/list', listTasks);
-	app.get('/tasks/add', addTask);
-	app.get('/tasks/remove', removeTask);
-	app.get('/tasks/info', infoTask);
+
+	app.post('/tasks/add', addTask);
+	app.post('/tasks/remove', removeTask);
+
+	app.get('/tasks/info/:id', infoTask);
 
 	app.get('/stats', statsInfo);
-	app.get('/stats/info', statsInfo);
 
 	return app;
 };

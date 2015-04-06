@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "bunyan": "^1.0.1",
+    "es6-promise": "^2.0.1",
+    "es6-promise-helper": "0.0.1",
     "express": "^4.12.3",
-    "longjohn": "^0.2.4"
+    "longjohn": "^0.2.4",
+    "mongoose": "^4.0.1"
   },
   "devDependencies": {
     "chai": "^1.9.1",

@@ -1,4 +1,5 @@
-'use strict';
+var app = require('./src/app');
+
 if (process.env.NODE_ENV !== 'production') {
 	require('longjohn');
 }
