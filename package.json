@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "bunyan": "^1.0.1",
+    "express": "^4.12.3",
     "longjohn": "^0.2.4"
   },
   "devDependencies": {
@@ -15,10 +16,12 @@
     "chai-as-promised": "^4.1.1",
     "coveralls": "^2.11.1",
     "istanbul": "^0.3.2",
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "supertest": "^0.15.0"
   },
   "scripts": {
     "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- tests/* -R spec -t 5000 --recursive",
+    "tdd": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- tests/* -R spec -t 5000 --recursive -w",
     "coverall": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- tests/* -R spec -t 5000 --recursive && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "author": "",
